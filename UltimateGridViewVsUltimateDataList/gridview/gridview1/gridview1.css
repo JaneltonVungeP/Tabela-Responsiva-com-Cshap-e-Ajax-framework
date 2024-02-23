@@ -1,0 +1,101 @@
+﻿* {
+    font-family: Roboto,sans-serif;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: .5s all ease-in-out;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+.textboxes {
+    width: 120px;
+    height:28px;
+}
+
+body {
+    background-color: #151F28;
+}
+
+.gridview1 {
+    margin: 0 auto;
+     background: linear-gradient( to right, #063E86 0%,antiquewhite 100%);
+    border: 1px solid #063E86;
+    border-radius:7px;
+}
+#Label7{
+    background:transparent;
+}
+.gridview1:hover, #Label7:hover {
+    box-shadow: 0px 0px 50px 0px #063E86;
+}
+.gridview1_header{
+  
+}
+.gridview1_row{
+   
+}
+.All_textboxes{
+    height:30px;
+}
+
+
+
+.gooey {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    text-align:center;
+    justify-content:center;
+    align-items:center;
+
+    background: #ffff;
+    filter: contrast(20);
+ 
+}
+
+.dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite;
+}
+
+.dots {
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite;
+    
+}
+
+ .dots span{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+}
+
+
+
+
+@keyframes dot{
+50%{transform: translateX(96px);}
+}
+
+@keyframes dots{
+50%{transform: translateX(-31px);}
+}
